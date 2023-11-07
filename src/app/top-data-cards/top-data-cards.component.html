@@ -1,0 +1,14 @@
+<div class="top-cards container-fluid d-flex flex-wrap align-items-center justify-content-between">
+    <div class="top-card text-white me-4" *ngFor="let card of topCards;let i = index">
+        <div class="top-card-body d-flex justify-content-between p-3">
+            <div class="top-card-text">
+                <h2>{{ card.value | number }} %</h2>
+                <p class="m-0">{{ card.header }}</p>
+                <p class="m-0"><small>Dummy text here</small></p>
+            </div>
+            <div class="top-card-icon">
+                <i [class]="iconList[i]"></i>
+            </div>
+        </div>
+    </div>
+</div>
